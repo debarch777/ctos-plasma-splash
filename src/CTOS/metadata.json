@@ -1,24 +1,19 @@
 {
-  "version": "2.0.0",
+  "version": "1.0.0",
   "KPackageStructure": "Plasma/LookAndFeel",
   "KPlugin": {
     "Authors": [
       {
-        "Email": "andreiradoidev@gmail.com",
-        "Name": "ferretwithaberet"
-      },
-      {
-        "Email": "palinuro@parrotsec.org",
-        "Name": "Lorenzo Faletra"
+        "Name": "Sourabh Singh"
       }
     ],
     "Category": "",
-    "Description": "CTOS-style splash screen for Plasma 6 — clean black background, no branding text or logo",
+    "Description": "CTOS — a clean, minimalist splash screen for Plasma 6. Pure black background, no logos, no branding text, just the animation.",
     "Id": "CTOS",
     "License": "GPLv2+",
     "Name": "CTOS",
-    "Website": "https://gitlab.com/parrotsec/packages/parrot-core"
+    "Website": "https://github.com/debarch777/ctos-plasma-splash"
   },
-  "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;Watch;Dogs;Watchdogs;CTOS;",
+  "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;Watch;Dogs;Watchdogs;CTOS;Minimalist;",
   "X-Plasma-APIVersion": "2"
 }

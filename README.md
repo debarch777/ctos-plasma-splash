@@ -1,12 +1,19 @@
 <div align="center">
 
-<img src="assets/social-card.png" alt="CTOS Splash" width="640"/>
-
 # CTOS — Plasma 6 Splash Screen
 
-A clean, minimalist splash screen for **KDE Plasma 6** inspired by the ctOS boot sequence from *Watch Dogs*.
+A clean, minimalist splash screen for **KDE Plasma 6** inspired by the ctOS boot sequence.
 
-Just the animation on a pure black background. **No logos. No branding text. No spinner.**
+Pure black background. Just the animation. **No logos. No branding text. No spinner.**
+
+</div>
+
+<br/>
+<div align="center">
+
+<img src="assets/animation.gif" alt="CTOS splash animation" width="420"/>
+
+<sub>The actual splash animation, playing in real time.</sub>
 
 </div>
 
@@ -14,24 +21,11 @@ Just the animation on a pure black background. **No logos. No branding text. No 
 
 ## Why
 
-The default Parrot Security splash shows a nice CTOS-style animation — but it also stamps a **"Welcome to Parrot Security"** banner and the Parrot logo at the bottom. This theme strips all of that away and keeps only the animation, on a clean black screen.
-
-It ships as a standalone Plasma Look-and-Feel package, so it shows up as its own entry named **CTOS** in your Splash Screen settings.
-
-## Preview
-
-<div align="center">
-<table>
-<tr>
-<td align="center"><b>Splash screen</b><br/><img src="assets/preview.png" alt="splash preview" width="400"/></td>
-<td align="center"><b>What gets removed</b><br/><sub>The bottom "Welcome to Parrot Security" text and logo are gone.</sub></td>
-</tr>
-</table>
-</div>
+Most splash screens clutter the boot with logos, distribution names, and spinners. **CTOS** keeps it simple — a centered animation on a pure black screen, and nothing else. It installs as its own entry named **CTOS** in your Splash Screen settings.
 
 ## Requirements
 
-- KDE Plasma **6** (Plasma 5 is not supported — the QML uses Plasma 6 APIs)
+- KDE Plasma **6** (not compatible with Plasma 5)
 
 Check your version:
 
@@ -49,10 +43,10 @@ Pick whichever method you're comfortable with.
 curl -fsSL https://raw.githubusercontent.com/debarch777/ctos-plasma-splash/main/install.sh -o /tmp/ctos-install.sh && bash /tmp/ctos-install.sh
 ```
 
-### Method 2 — Manual (download .zip)
+### Method 2 — Manual (.zip download)
 
 1. Go to **[Releases](https://github.com/debarch777/ctos-plasma-splash/releases)**
-2. Download `CTOS.zip` (or download the `src/CTOS` folder from **Code → Download ZIP**)
+2. Download `CTOS.zip`
 3. Unzip so you have a folder called `CTOS` containing `metadata.json` and `contents/`
 4. Move it into place:
    ```bash
@@ -88,11 +82,10 @@ Then pick a different splash in System Settings.
 
 ## How it works
 
-The theme is a Plasma Look-and-Feel package. The interesting file is
+The theme is a Plasma Look-and-Feel package. The layout lives in
 [`src/CTOS/contents/splash/Splash.qml`](src/CTOS/contents/splash/Splash.qml) —
-it's just a fullscreen black `Rectangle` with a centered `AnimatedImage` playing
-`animation.gif`. That's it. The original Parrot theme's bottom Row (text + logo)
-and the busy spinner were removed.
+just a fullscreen black `Rectangle` with a centered `AnimatedImage` playing
+`animation.gif`. That's it.
 
 Tweak freely:
 
@@ -115,23 +108,13 @@ ctos-plasma-splash/
 │               └── images/
 │                   └── animation.gif  ← the CTOS-style animation
 ├── install.sh                         ← one-line installer
-├── assets/                            ← repo graphics (preview, social card)
+├── assets/                            ← repo graphics (animation, social card)
 └── README.md
 ```
 
-## Credits & License
+## License
 
-This theme is a derived work. The original animation, layout, and concept come
-from the **[Parrot Security](https://gitlab.com/parrotsec/packages/parrot-core)**
-splash screen by the Parrot team (Lorenzo Faletra) and ferretwithaberet.
-
-- Animation artwork © its respective authors
-- Code (`Splash.qml`) licensed under **GPLv2+** (inherited from the original)
-- The `CTOS` name references the fictional operating system from Ubisoft's
-  *Watch Dogs*; this project is not affiliated with or endorsed by Parrot,
-  KDE, or Ubisoft.
-
-## Acknowledgements
-
-- [Parrot Security](https://www.parrotsec.org/) — original theme
-- [KDE Plasma](https://kde.org/plasma-desktop/) — the desktop this beautifies
+- Code (`Splash.qml`) licensed under **GPLv2+**. See [LICENSE](LICENSE).
+- Animation artwork © its respective authors.
+- "ctOS" references the fictional operating system from Ubisoft's *Watch Dogs*;
+  this project is not affiliated with or endorsed by Ubisoft or KDE.

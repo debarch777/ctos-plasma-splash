@@ -20,6 +20,5 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
-NOTE: The Splash.qml code is licensed under GPLv2+ (inherited from the
-original Parrot Security splash by Marco Martin / the Parrot team).
-The animation artwork (animation.gif) is © its respective authors.
+NOTE: The Splash.qml code is licensed under GPLv2+. The animation
+artwork (animation.gif) is © its respective authors.
