@@ -1,0 +1,15 @@
+# Temporary / generated
+.tmp/
+*.tmp
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
