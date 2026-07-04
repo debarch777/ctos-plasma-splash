@@ -4,7 +4,7 @@
 
 A clean, minimalist splash screen for **KDE Plasma 6** inspired by the ctOS boot sequence.
 
-Pure black background. Just the animation. **No logos. No branding text. No spinner.**
+Just a centered animation on a pure black screen.
 
 </div>
 

@@ -8,7 +8,7 @@
       }
     ],
     "Category": "",
-    "Description": "CTOS — a clean, minimalist splash screen for Plasma 6. Pure black background, no logos, no branding text, just the animation.",
+    "Description": "CTOS — a clean, minimalist splash screen for Plasma 6. A centered animation on a pure black screen.",
     "Id": "CTOS",
     "License": "GPLv2+",
     "Name": "CTOS",
